@@ -13,9 +13,11 @@ steps:
     args:
       - 'run'
       - 'deploy'
-      - 'mi-primera-web' # Este será el nombre de tu servicio
+      - 'mi-primera-web'
       - '--image'
       - 'gcr.io/$PROJECT_ID/mi-web'
       - '--region'
       - 'us-central1'
-      - '--allow-unauthenticated' # Para que sea público en internet
+      - '--allow-unauthenticated'
+      - '--port' # <--- Le decimos que busque un puerto específico
+      - '80'     # <--- Le indicamos que es la puerta 80
