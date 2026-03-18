@@ -1,7 +1,7 @@
-# Le damos un nombre único para no pisar el trabajo de nadie más
 service: mi-prueba-web
 
-runtime: python39
+# ¡Aquí está el cambio! Usamos una versión moderna y soportada
+runtime: python311 
 
 handlers:
 - url: /
