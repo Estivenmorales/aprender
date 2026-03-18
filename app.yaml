@@ -1,0 +1,9 @@
+# Le damos un nombre único para no pisar el trabajo de nadie más
+service: mi-prueba-web
+
+runtime: python39
+
+handlers:
+- url: /
+  static_files: index.html
+  upload: index.html

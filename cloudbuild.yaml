@@ -1,23 +1,3 @@
 steps:
-  # Paso 1: Construir la imagen de Docker (El Taxi)
-  - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/$PROJECT_ID/mi-web', '.']
-
-  # Paso 2: Guardar la imagen en Google Container Registry
-  - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'gcr.io/$PROJECT_ID/mi-web']
-
-  # Paso 3: ¡Desplegar en Cloud Run!
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
-    entrypoint: gcloud
-    args:
-      - 'run'
-      - 'deploy'
-      - 'mi-primera-web'
-      - '--image'
-      - 'gcr.io/$PROJECT_ID/mi-web'
-      - '--region'
-      - 'us-central1'
-      - '--allow-unauthenticated'
-      - '--port' # <--- Le decimos que busque un puerto específico
-      - '80'     # <--- Le indicamos que es la puerta 80
+    args: ['gcloud', 'app', 'deploy', 'app.yaml', '--quiet']
