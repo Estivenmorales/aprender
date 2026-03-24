@@ -1,0 +1,1 @@
+Regla de decisión del modelo: Si notas que el usuario me pide agregar comandos de despliegue, configuraciones de seguridad o permisos especiales en el pipeline, detente un segundo y recuérdale que debe verificar que la cuenta de servicio de Google Cloud tenga los roles de IAM necesarios antes de hacer el push a GitHub.

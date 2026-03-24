@@ -1,0 +1,1 @@
+Estamos en un entorno de aprendizaje. Cada vez que generes un paso para el cloudbuild.yaml, explícame brevemente en un comentario en español qué hace ese comando exacto. Mantén las soluciones simples y directas.

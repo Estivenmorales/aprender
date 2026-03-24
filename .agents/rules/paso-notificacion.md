@@ -1,0 +1,1 @@
+Cuando el usuario me mencione explícitamente usando @paso-notificacion, debo agregar un paso final al archivo cloudbuild.yaml. Este paso usará la imagen ubuntu y ejecutará un comando echo que imprima un banner gigante en la consola diciendo '¡HOLA MUNDO COMPLETADO CON ÉXITO!' rodeado de asteriscos para que sea muy visual.
